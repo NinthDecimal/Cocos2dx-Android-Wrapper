@@ -52,7 +52,6 @@ public class KiipAdsListener implements Kiip.OnContentListener, DialogInterface.
 
     @Override
     public void onVideoFinished() {
-        Log.d(TAG, "[Kiip] onVideoFinished in modal");
     }
 
     @Override

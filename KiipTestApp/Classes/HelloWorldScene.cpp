@@ -63,8 +63,6 @@ bool HelloWorld::init()
     // 3. add your codes below...
 
     this->setTestMode(true);
-//    this->kiipSaveMoment("t");
-
 
     // add a label shows "Hello World"
     // create and initialize a label
@@ -104,6 +102,7 @@ bool HelloWorld::init()
 
 void HelloWorld::menuCloseCallback(Ref* pSender)
 {
+    //calling an ad when user clicks on the power button
     HelloWorld::kiipSaveMoment("t");
     //Close the cocos2d-x game scene and quit the application
 //    Director::getInstance()->end();
@@ -120,22 +119,22 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
 
 }
 
-
+//Initialize Kiip
 void HelloWorld::initKiipAdsFunc()
 {
-    const char* gameKey = "3b46e5f42299f1697193bb843ed8dbf4";
-    const char* gameSecret = "90c4f68ebb4817b3edf24799b04df22c";
+    const char* gameKey = "YOUR_APP_KEY";
+    const char* gameSecret = "YOUR_APP_SECRET";
     KiipAdsInit(gameKey, gameSecret);
 
 };
 
-
+//Set Kiip in test mode
 void HelloWorld::setTestMode(bool testMode)
 {
-    KiipAdsSetTestMode(true);
+    KiipAdsSetTestMode(testMode);
 };
 
-
+//Trigger a moment to get an ad
 void HelloWorld::kiipSaveMoment(const char* moment)
 {
     KiipSaveMoment(moment);

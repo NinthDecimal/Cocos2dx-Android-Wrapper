@@ -21,6 +21,7 @@ public class KiipAdsJNI {
             return;
         }
 
+        //Cocos2dxHelper.getActivity().getApplication()
         activity.runOnUiThread(new Runnable()
         {
             public void run()
@@ -50,7 +51,7 @@ public class KiipAdsJNI {
         Kiip.getInstance().saveMoment(momentID, new Kiip.Callback() {
             @Override
             public void onFailed(Kiip kiip, Exception e) {
-
+                Log.d(TAG,e.getMessage());
             }
 
             @Override
