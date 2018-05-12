@@ -19,7 +19,7 @@ Helpers and `KiipSDK.jar` are located in `../proj.android-studio/app/libs`.
 If you want to use KiipSDK inside your Cocos2dx project, please follow the instructions down below.
 Note: We are using **Android Studio** for this tutorial.
 
-### [To Get Started]
+### To Get Started
   1. Create an app in the [Kiip Dashboard](https://app.kiip.me/app/dashboard)
   2. Project helpers and dependencies
       - `KiipSDK.jar` (`../proj.android-studio/app/libs`) **Must be present**
